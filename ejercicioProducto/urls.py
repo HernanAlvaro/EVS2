@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from productosApp.views import *
-from Jujutsu.views import *  
+from Jujutsu import views as Jujutsu
 
 
 urlpatterns = [
@@ -26,5 +26,5 @@ urlpatterns = [
     path("juguetes/",juguetes),
     path("electronica/",electronica),
     path("ropa/",ropa),
-    path("jujutsu/", jujutsu_k)
+    path("jujutsu/", Jujutsu)
 ]
