@@ -1,4 +1,6 @@
+from django.urls import reverse
 from django.shortcuts import render
+from django.shortcuts import redirect
 
 
 # Create your views here.
@@ -41,3 +43,7 @@ def juguetes(request):
         
     }
     return render(request,'templatesProductos/productos.html',data)
+
+def ir_app2(request):
+    app2 = reverse()
+    return redirect(app2)
